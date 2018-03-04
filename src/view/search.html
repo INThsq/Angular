@@ -1,0 +1,13 @@
+<div class="search-bar ta-c">
+	<button ng-click="name='';search();">取消</button>
+	<input ng-model="name" type="text" placeholder="搜索职位/公司/城市">
+	<button ng-click="search();" class="ta-l">搜索</button>
+</div>
+<!-- 筛选条件的指令 -->
+<div app-tab  list="tabList"></div>
+<!-- 职位列表的展示 -->
+<div app-position-list data="list" style="padding-top: 0" tiaojianobj='tiaojianobj' ></div>
+<!-- 复用app-footer指令 -->
+<div app-footer></div>
+<!-- 底部展示条件的指令 -->
+<div ng-show="listshow" app-tab-list tablist="tablist"></div>

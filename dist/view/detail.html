@@ -1,0 +1,25 @@
+<!-- 头部指令 -->
+<div app-head-bar text="职位详情"></div>
+<!-- 工作详情 -->
+<div class="content1">
+	<p>{{position.name}} <span>{{position.experience}}</span></p>
+	<p>{{position.cityName}} {{position.experience}} {{position.education}}
+	 <!-- ng-class后面传的是对象 true 跟false 默认显示透明 -->
+		<span ng-class="{'sc':1,'sc2':sced}" ng-show="name" ng-click="collect()"></span>
+	</p>
+	<p>{{position.benefit}}</p>
+</div> 
+<!-- 公司信息指令 -->
+<div app-company company="company"></div>
+<!-- 职位职责 -->
+<div class="content3">
+	<h3>职位描述</h3>
+	<div class="zhiz">
+		<pre>{{position.description}}</pre>
+	</div>
+</div>
+<!-- 去登录按钮 -->
+<!-- 未登陆 -->
+<div class="big_btn ta-c d-ib" ng-hide="name" ui-sref="login">去登陆</div>
+<!-- 已登陆 -->
+<div class="big_btn ta-c d-ib" ng-show="name" ng-click="sendj1()">{{sendtxt}}</div>

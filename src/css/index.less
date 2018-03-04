@@ -1,0 +1,92 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+.w(@num){
+	width:unit(@num/37.5,rem);
+}
+.h(@num){
+	height:unit(@num/37.5,rem);
+}
+.mt(@num){
+	margin-top:unit(@num/37.5,rem);
+}
+.ml(@num){
+	margin-left:unit(@num/37.5,rem);
+}
+.mr(@num){
+	margin-right:unit(@num/37.5,rem);
+}
+.mb(@num){
+	margin-button:unit(@num/37.5,rem);
+}
+.pt(@num){
+	padding-top:unit(@num/37.5,rem);
+}
+.pl(@num){
+	padding-left:unit(@num/37.5,rem);
+}
+.pr(@num){
+	padding-right:unit(@num/37.5,rem);
+}
+.pb(@num){
+	padding-bottom:unit(@num/37.5,rem);
+}
+.lh(@num){
+	line-height:unit(@num/37.5,rem);
+}
+.fz(@num){
+	font-size:unit(@num/37.5,rem);
+}
+.f-r{
+	float: right;
+}
+.f-l{
+	float: left;
+}
+.d-ib{
+	display:inline-block;
+}
+.ta-c{
+	text-align:center;
+}
+.ta-l{
+	text-align:left;
+}
+.p-a{
+	position:absolute;
+}
+.p-r{
+	position:relative;
+}
+.d-ib{
+	display:inline-block;
+}
+
+
+// 颜色的设置
+@topbg:#12d5b5;
+@bodybg:#eee;
+@footfont:#8a8685;
+@footfont2:#00c2a2;
+@footbg:#dbf9f4;
+@line:#f8f8f8;
+@btn:#f8ab15;
+html,body{
+	font-size:unit(16/37.5,rem);
+	width:100%;
+	height: 100%;
+	background:@bodybg;
+}
+ul,li{
+	list-style: none;
+}
+@import './positionlist.less';
+@import './detail.less';
+@import './company.less';
+@import './search.less';
+@import './login.less';
+@import './me.less';
+@import './post.less';
+
+

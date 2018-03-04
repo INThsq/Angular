@@ -1,0 +1,12 @@
+<!-- 头部的指令 -->
+<div app-head-bar text="我的投递"></div>
+
+
+<!-- 切换选项 -->
+<ul class="post_tab">
+<li ng-class="{'cur':curtab==$index}" ng-click="clicktab($index)"
+ ng-repeat="item in tabtext">{{item.txt}}</li>
+</ul>
+
+<!-- 显示筛选信息 -->
+<div app-position-list data="list" tiaojianobj="tiaojianobj"></div>

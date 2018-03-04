@@ -1,0 +1,91 @@
+.login {
+  background-image: url(../image/background.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  form {
+    .mt(220);
+    .ng-invalid {
+      &+span {
+        position: absolute;
+        color: #f00;
+        right: 0;
+        height: 100%;
+        text-align: right;
+        font-size: 12px;
+        p {
+          margin: 0;
+        }
+      }
+    }
+    .form-line {
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: content-box;
+      font-size: 0;
+      .w(300);
+      .h(40);
+      .lh(40);
+      color: #fff;
+      &:first-child {
+        border-bottom: 1px solid #fff;
+      }
+      .icon {
+        display: inline-block;
+        float: left;
+        background-color:rgba(0,0,0,0.4);
+        background-position:50%;
+        height: 100%;
+        background-repeat: no-repeat;
+        .w(55);
+      }
+      .account {
+        background-image: url(../image/account.png);
+      }
+      .lock {
+        background-image: url(../image/lock.png);
+      }
+      input {
+        border-width: 0;
+        background-color: #fff;
+        outline-width: 0;
+        height: 100%;
+        box-sizing: border-box;
+        color: #000;
+        .w(245);
+        font-size:15px;
+        .pl(30);
+        &::-webkit-input-placeholder{
+          color: #ddd;
+        }
+      }
+    }
+    button {
+      .w(300);
+      .h(35);
+      font-size: 22px;
+      font-weight: bold;
+      &.login-btn {
+        background-color: @topbg;
+        color: #fff;
+        margin:0px auto;
+        display: block;
+        margin-top: 75px;
+        border:none;
+      }
+      &.register-btn {
+         margin:0px auto;
+        display: block;
+        margin-top: 20px;
+        background-color: @btn;
+        color: @topbg;
+        border: 1px solid @btn;
+        color: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<div class="work-list">
+	<div class="plist">
+    <dl ng-repeat="item in data|positionfilter:tiaojianobj"  ui-sref="detail({'id':item.id})">
+        <dt><img ng-src="{{item.imageUrl}}"/></dt>
+        <dd>
+            <p class="p1" ng-bind="item.companyName+'['+item.cityName+']'+item.industryName+item.scaleName">
+            </p>
+            <p class="p2" ng-bind="item.salaryName"></p>
+            <p class="p3" ng-bind="item.date"></p>
+        </dd>
+    </dl>
+</div>
+</div>
+

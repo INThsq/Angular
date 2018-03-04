@@ -1,0 +1,120 @@
+//head样式
+.head {
+  top:0;
+  width:100%;
+  background-color: @topbg;
+  .h(40);
+  .lh(40);
+  .fz(16);
+  box-sizing:border-box;
+  padding: 0 7px;
+  .text {
+    color: #fff;
+    display:inline-block;
+    .lh(40);
+    img{
+      .w(30);
+      .h(30);
+      display:inline-block;
+      vertical-align:middle;
+      .mr(10);
+    }
+  }
+  .custom {
+   background-color:@btn;
+   background-color: @btn; 
+   border:4px solid @btn;  
+   color:#fff;
+    .mt(7);
+    .pl(15);
+    .pr(15);
+  }
+  .back-btn {
+    font-size: 20px;
+    width: 1rem;
+    left: 0;
+  }
+}
+//pList样式
+.plist{
+  background:#fff;
+  dl{
+    .pt(5);
+    .pb(5);
+    overflow: hidden;
+    border-bottom:1px solid #ddd;
+      dt{
+      .pl(10);
+      .f-l;
+          img{
+            .w(70);
+            .h(70);
+            .mr(10);
+          }
+      }
+      dd{
+        .p1{
+          .lh(26);
+          .fz(14);
+        }
+        .p2{
+          .lh(18);
+          color:#f00;
+        }
+        .p3{
+          .lh(18);
+          .fz(8);
+        }
+
+      }
+  }
+}
+
+//footer样式
+.footer{
+    border-top:1px solid #e5e5e5;
+    border-bottom:1px solid #e5e5e5;
+    background: #fff;
+    position:fixed;
+    display:flex;
+    bottom:0;
+    width:100%;
+    .lh(42);
+    a{
+      display: block;
+      flex: 1;
+      .lh(42);
+      color:#a09f9e;
+      .fz(20);
+      text-decoration:none;
+      &.select {
+      background-color: @footbg;
+      color: @topbg;
+    }
+      span{
+       vertical-align: middle;
+      .lh(42);
+      .w(26);
+      .h(24);
+      .mt(-6);
+      }
+    }
+    .icon-document{
+     span{
+      background: url(../image/document.png) no-repeat;
+      background-position: left center;
+      }
+     }
+     .icon-search{
+     span{
+      background: url(../image/search.png) no-repeat;
+      background-position: left center;
+      }
+     }
+     .icon-me{
+     span{
+      background: url(../image/my.png) no-repeat;
+      background-position: left center;
+      }
+     }
+}
